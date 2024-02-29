@@ -1,0 +1,137 @@
+/* xl-размер (>=1200px) */
+/* CSS для >=1200px */
+
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) {
+  /* CSS для ширины от 992px до 1199px */
+  .article__img {
+    min-height: 180px;
+  }
+}
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+
+  /* CSS для ширины от 768px до 991px */
+  .hero {
+    padding-top: 130px;
+    padding-bottom: 135px;
+  }
+
+  .hero__title {
+    font-size: 50px;
+  }
+
+  .advantages__item {
+    padding: 0;
+    padding-top: 95px;
+    background-position: top left;
+  }
+
+  .teachers__list {
+    row-gap: 30px;
+  }
+
+  .courses__btn {
+    padding: 20px 55px;
+  }
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+
+  /* CSS для ширины от 576px до 767px */
+  .header__logo {
+    margin-bottom: 30px;
+  }
+
+  .header .header__nav {
+    overflow-x: scroll;
+  }
+
+  .hero {
+    padding-top: 77px;
+  }
+
+  .hero__img {
+    display: none;
+  }
+
+  .courses__title {
+    line-height: 130%;
+  }
+
+  .courses__btn {
+    padding: 20px 48px;
+  }
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+
+  /* CSS для ширины до 575px (включительно) */
+  .title {
+    font-size: 20px;
+  }
+
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero__title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .hero__desc {
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 50px;
+  }
+
+  .hero__btn {
+    padding: 20px 53px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .advantages {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .advantages__img {
+    display: none !important;
+  }
+
+  .advantages__title {
+    margin-bottom: 15px;
+    line-height: 130%;
+  }
+
+  .advantages__list {
+    gap: 30px;
+  }
+
+  .advantages__item {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 110px;
+    background-position: center left;
+  }
+
+  .teachers {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .courses {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .courses__btn {
+    padding: 20px 55px;
+  }
+}

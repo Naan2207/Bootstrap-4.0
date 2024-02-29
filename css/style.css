@@ -1,0 +1,315 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff') format('woff');
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff') format('woff');
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-blue: #3F2AFF;
+  --color-white: #fff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  width: fit-content;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.btn-reset {
+  padding: 0;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.list-reset {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.caption {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.text {
+  margin: 0;
+}
+
+.btn {
+  padding: 20px 59px;
+  line-height: 19px;
+  border-radius: 20px;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+
+.article__img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 180px;
+  border-radius: 20px 20px 0 0;
+}
+
+/* header */
+
+
+.header {
+  padding: 28px 0;
+  background-color: var(--color-blue);
+}
+
+.header__link {
+  display: flex;
+}
+
+.nav__list {
+  display: flex;
+  gap: 56px;
+}
+
+.nav__link {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--color-white);
+}
+
+
+/* hero */
+
+.hero {
+  padding: 13px 0;
+  background: radial-gradient(44.00% 44.00% at 68% 56.00000000000001%, rgb(85, 86, 129), rgb(33, 33, 51) 100%);
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 30px;
+  color: var(--color-white);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.hero__desc {
+  margin-bottom: 60px;
+  color: var(--color-white);
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.hero__btn {
+  padding: 24px 75px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+
+/* advantages */
+
+.advantages {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.advantages__indent {
+  margin-bottom: 22px;
+}
+
+.advantages__title {
+  margin-bottom: 20px;
+  color: rgb(46, 43, 68);
+}
+
+.advantages__desc {
+  color: rgb(102, 102, 102);
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+  padding-left: 110px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.advantages__item--imgone {
+  background-image: url('../img/eye-circle.svg');
+
+}
+
+.advantages__item--imgtwo {
+  background-image: url('../img/fingers.svg');
+
+}
+
+.advantages__item--imgthree {
+  background-image: url('../img/eye-megaphone.svg');
+
+}
+
+.advantages__text {
+  color: rgb(102, 102, 102);
+  font-weight: 700;
+  line-height: 120%;
+}
+
+/* teachers */
+
+.teachers {
+  padding-top: 80px;
+  padding-bottom: 73px;
+  color: var(--color-white);
+  background-color: rgb(33, 33, 51);
+}
+
+.teachers__title {
+  margin-bottom: 20px;
+}
+
+.teachers__item {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.teachers__item-name {
+  margin-bottom: 6px;
+}
+
+.teachers__picture {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.teachers__item-text {
+  color: rgb(133, 133, 155);
+}
+
+/* courses */
+
+.courses {
+  padding-top: 75px;
+  padding-bottom: 80px;
+}
+
+.courses__title {
+  margin-bottom: 22px;
+}
+
+.courses__caption {
+  margin-bottom: 8px;
+  color: rgb(33, 33, 51);
+}
+
+.courses__list {
+  row-gap: 30px;
+}
+
+
+.courses__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgb(237, 240, 249);
+}
+
+.courses__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 30px;
+  flex-grow: 1;
+}
+
+.courses__time {
+  position: absolute;
+  top: 10px;
+  right: 4px;
+  padding-left: 29px;
+  background-image: url('../img/mdi_access_time.svg');
+  background-repeat: no-repeat;
+  color: var(--color-white);
+}
+
+.courses__text {
+  margin-bottom: 25px;
+  color: rgb(102, 102, 102);
+}
+
+
+
+/* footer */
+
+.footer {
+  max-height: 98px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 30px 0;
+  background-color: rgb(46, 43, 68);
+}
+
+.footer__inner-link {
+  display: flex;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer__bottom-text {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+
+}
+
+.footer__bottom-color {
+  color: #3F2AFF;
+}
